@@ -1,5 +1,5 @@
 import ffmpeg
-from os import path
+from os import path, makedirs
 from pathlib import Path
 
 class Response:
@@ -13,6 +13,7 @@ class ConverterEngine:
     def convert(self, input: str) -> Response:
         try:
             storage_path = path.abspath(path.join(path.dirname(__file__), "..", "storage"))
+            makedirs(storage_path, exist_ok=True)
             video_name = Path(input).name
             video_name = video_name.split(".")[0] + ".mp4"
             output = storage_path + "\\" + video_name
