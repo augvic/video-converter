@@ -30,8 +30,8 @@ You can run the tool using `main.py` after installing the dependencies listed in
 
 ## 🧰 Tech Stack
 
-Languages:
+💻 Languages:
 - 🐍 Python.
 
-External tools:
+⚙️ External tools:
 - 🎞️ FFmpeg.
