@@ -18,7 +18,7 @@ After the conversion is completed, the output video will be available in the `st
 
 ⚠️ Any unknown errors that occur during execution are logged in the `storage/logs` directory.
 
-## ▶️ How to use
+## ▶️ Usage
 
 You can run the tool using `main.py` after installing the dependencies listed in `requirements.txt`, or by packaging the project using **PyInstaller** with `make.spec`.
 
