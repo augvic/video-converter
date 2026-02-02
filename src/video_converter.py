@@ -1,12 +1,12 @@
-from .converter_engine import ConverterEngine
-from .converter_task import ConverterTask
+from .engines.engines import Engines
+from .convert_task import ConvertTask
 from .cli import Cli
 
 class VideoConverter:
     
     def __init__(self) -> None:
-        self.converter_engine = ConverterEngine()
-        self.converter_task = ConverterTask(self.converter_engine)
+        self.engines = Engines()
+        self.converter_task = ConvertTask(self.engines)
         self.cli = Cli(self.converter_task)
     
     def main(self) -> None:
